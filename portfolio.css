@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+.project{
+	margin-top: 20px;
+	background-color: WhiteSmoke;
+}
+.container .text-muted {
+	margin: 20px 0;
+}
+.screenshot{
+	margin: 10px;
+}
+.category-list, .filter-list, .skill-list, .social-media-list{
+	padding-left: 0px;
+}
+.category, .skill, .filter, .remove-current-filter{
+	border-radius: 10px;
+	padding-left: 10px;	
+	padding-right: 10px;
+	margin: 2px;
+	display: inline-block;
+}
+.category, .skill, .filter{
+	background-color: green;
+}
+.filter a, .remove-current-filter a{
+	color: black;
+	text-decoration: none;
+}
+.remove-current-filter{
+	background-color: red;	
+}
+.remove-filter{
+	padding-left: 0px;
+	display: none;
+}
+.skill-details{
+	display: none;
+}
+.project-details, .biography{
+	overflow: hidden;
+}
+footer{
+    text-align:center;
+}
+.social-media{
+	margin: 2px;
+	display: inline-block;
+}
