@@ -33,7 +33,7 @@
 	padding-left: 0px;
 	display: none;
 }
-.skill-details{
+.skill-details .category-details{
 	display: none;
 }
 .project-details, .biography{

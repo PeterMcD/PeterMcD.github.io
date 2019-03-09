@@ -1,151 +1,145 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet'
-          href="css/bootstrap.min.css">
-    <link rel='stylesheet' href="css/articles.css">
-    <title>Articles - Peter McDonald</title>
-</head>
-<body>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet'
+              href="css/bootstrap.min.css">
+        <link rel='stylesheet' href="css/portfolio.css">
+        <title>Articles - Peter McDonald</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Peter McDonald</a>
+                </div>
 
-<nav class="navbar navbar-inverse navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Peter McDonald</a>
-        </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="articles.html">Articles</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+        <div class='container-fluid content'>
+            <main class="col-12 col-md-8">
+                <div class="intro">
+                    <h2>
+                        Articles
+                    </h2>
+                    <p>
+                        Over the years I have written a number of articles, here are some of them.
+                    </p>
+                </div>
 
-<div class='container-fluid content'>
-    <main class="col-12 col-md-8">
-        <div class="intro">
-            <h2>
-                Articles
-            </h2>
-            <p>
-                Over the years I have created a number of articles, here are some of them.
-            </p>
-        </div>
+                <div class="project clearfix">
+                    <section class="project-details col-12 col-lg-8">
+                        <h3>
+                            <a class="url" href="https://medium.com/@petermcd/i-opened-my-connection-to-ssh-attacks-and-these-were-the-requests-i-saw-a5999d62e511" rel="noopener noreferrer">I Opened My Connection To SSH Attacks, And These Were The Requests I Saw</a>
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category security">Security</li>
+                        </ul>
+                        <p>
+                            Recently I decided to investigate the type of requests that I would receive if I had opened up SSH to the world. The following are the results of that investigation.
+                        </p>
+                        <p><a href="https://medium.com/@petermcd/i-opened-my-connection-to-ssh-attacks-and-these-were-the-requests-i-saw-a5999d62e511">Read More...</a></p>
+                    </section>
+                </div>
 
-        <div class="project clearfix">
-            <section class="project-details col-12 col-lg-8">
-                <h3>
-                    <a class="url" href="https://medium.com/@petermcd/i-opened-my-connection-to-ssh-attacks-and-these-were-the-requests-i-saw-a5999d62e511" rel="noopener noreferrer">I Opened My Connection To SSH Attacks, And These Were The Requests I Saw</a>
-                </h3>
-                <ul class="category-list">
-                    <li class="category security">Security</li>
+                <div class="project clearfix">
+                    <section class="project-details col-12 col-lg-8">
+                        <h3>
+                            <a class="url" href="https://medium.com/@petermcd/how-i-setup-my-ssh-honeypot-b34b2bd3fba9" rel="noopener noreferrer">How I Setup My SSH Honeypot</a>
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category linux">Linux</li>
+                            <li class="category programming">Programming</li>
+                            <li class="category security">Security</li>
+                        </ul>
+                        <p>
+                            A few weeks ago I became curious as to what types of credentials were being attempted on SSH. I came up with the idea of creating a honeypot and capturing what credentials were attempted, when they were attempted and where the attempts originated from.
+                        </p>
+                        <p><a href="https://medium.com/@petermcd/how-i-setup-my-ssh-honeypot-b34b2bd3fba9">Read More...</a></p>
+                    </section>
+                </div>
+
+                <div class="project clearfix">
+                    <section class="project-details col-12 col-lg-8">
+                        <h3>
+                            <a class="url" href="https://medium.com/@petermcd/the-dangerous-world-of-single-sign-on-831c034b06c1" rel="noopener noreferrer">The Dangerous World Of Single Sign-On.</a>
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category security">Security</li>
+                        </ul>
+                        <p>
+                            Over the years many of us have succumbed to a very serious condition, sign-on fatigue. Being required to continually supply a username and a password whenever you wish to start using a site or to log back into it. We all knew the passwords should differ between sites however when so many are needed this becomes tiresome at best or even impracticable. When we hit this wall, we tend to find shortcuts, in this case reusing passwords.
+                        </p>
+                        <p><a href="https://medium.com/@petermcd/the-dangerous-world-of-single-sign-on-831c034b06c1">Read More...</a></p>
+                    </section>
+                </div>
+
+                <div class="project clearfix">
+                    <section class="project-details col-12 col-lg-8">
+                        <h3>
+                            <a class="url" href="https://medium.com/@petermcd/the-unexpected-benefits-of-password-managers-cbddde0e4313" rel="noopener noreferrer">Unexpected Benefits of Password Managers</a>
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category security">Security</li>
+                        </ul>
+                        <p>
+                            For some time now, I have been a loyal LastPass customer. Passwords can be tricky and a serious issue to keep track of. However recently I came across an unexpected advantage of using such a password manager.
+                        </p>
+                        <p><a href="https://medium.com/@petermcd/the-unexpected-benefits-of-password-managers-cbddde0e4313">Read More...</a></p>
+                    </section>
+                </div>
+
+                <div class="project clearfix">
+                    <section class="project-details col-12 col-lg-8">
+                        <h3>
+                            <a class="url" href="https://medium.com/@petermcd/installing-raspbian-on-a-raspberry-pi-7f75bf355043" rel="noopener noreferrer">Installing Raspbian on a Raspberry Pi</a>
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category linux">Linux</li>
+                            <li class="category sysops">Sysops</li>
+                        </ul>
+                        <p>
+                            You have likely heard the hype regarding the Raspberry Pi over the years, as usual the hardest part of getting started is where to start. You can certainly buy an SD Card that already contains the Raspbian operating system, however, what does buying such an SD card teach you?
+                            In this article I will show you how to install the Raspbian operating system on an SD card bypassing the need for Noobs.
+                        </p>
+                        <p><a href="https://medium.com/@petermcd/installing-raspbian-on-a-raspberry-pi-7f75bf355043">Read More...</a></p>
+                    </section>
+                </div>
+
+            </main>
+            <section class="col-12 col-md-4">
+                <h2>Categories</h2>
+                <ul class="filter-list">
                 </ul>
-                <p>
-                    Recently I decided to investigate the type of requests that I would receive if I had opened up SSH to the world. The following are the results of that investigation.
-                </p>
-                <p><a href="https://medium.com/@petermcd/i-opened-my-connection-to-ssh-attacks-and-these-were-the-requests-i-saw-a5999d62e511">Read More...</a></p>
+                <ul class="remove-filter"><li class="remove-current-filter"><a href="#">Remove Filter</a></li></ul>
+            </section>
+            <section class="category-details col-12 col-md-4">
+                <h3><a href="http://petermcdonald.co.uk" target="_blank"></a></h3>
+                <article></article>
             </section>
         </div>
-
-        <div class="project clearfix">
-            <section class="project-details col-12 col-lg-8">
-                <h3>
-                    <a class="url" href="https://medium.com/@petermcd/how-i-setup-my-ssh-honeypot-b34b2bd3fba9" rel="noopener noreferrer">How I Setup My SSH Honeypot</a>
-                </h3>
-                <ul class="category-list">
-                    <li class="category security">Security</li>
-                    <li class="category programming">Programming</li>
-                </ul>
-                <p>
-                    A few weeks ago I became curious as to what types of credentials were being attempted on SSH. I came up with the idea of creating a honeypot and capturing what credentials were attempted, when they were attempted and where the attempts originated from.
-                </p>
-                <p><a href="https://medium.com/@petermcd/how-i-setup-my-ssh-honeypot-b34b2bd3fba9">Read More...</a></p>
-            </section>
-        </div>
-
-        <div class="project clearfix">
-            <section class="project-details col-12 col-lg-8">
-                <h3>
-                    <a class="url" href="https://medium.com/@petermcd/the-dangerous-world-of-single-sign-on-831c034b06c1" rel="noopener noreferrer">The Dangerous World Of Single Sign-On.</a>
-                </h3>
-                <ul class="category-list">
-                    <li class="category security">Security</li>
-                </ul>
-                <p>
-                    Over the years many of us have succumbed to a very serious condition, sign-on fatigue. Being required to continually supply a username and a password whenever you wish to start using a site or to log back into it. We all knew the passwords should differ between sites however when so many are needed this becomes tiresome at best or even impracticable. When we hit this wall, we tend to find shortcuts, in this case reusing passwords.
-                </p>
-                <p><a href="https://medium.com/@petermcd/the-dangerous-world-of-single-sign-on-831c034b06c1">Read More...</a></p>
-            </section>
-        </div>
-
-        <div class="project clearfix">
-            <section class="project-details col-12 col-lg-8">
-                <h3>
-                    <a class="url" href="https://medium.com/@petermcd/the-unexpected-benefits-of-password-managers-cbddde0e4313" rel="noopener noreferrer">Unexpected Benefits of Password Managers</a>
-                </h3>
-                <ul class="category-list">
-                    <li class="category security">Security</li>
-                </ul>
-                <p>
-                    For some time now, I have been a loyal LastPass customer. Passwords can be tricky and a serious issue to keep track of. However recently I came across an unexpected advantage of using such a password manager.
-                </p>
-                <p><a href="https://medium.com/@petermcd/the-unexpected-benefits-of-password-managers-cbddde0e4313">Read More...</a></p>
-            </section>
-        </div>
-
-        <div class="project clearfix">
-            <section class="project-details col-12 col-lg-8">
-                <h3>
-                    <a class="url" href="https://medium.com/@petermcd/installing-raspbian-on-a-raspberry-pi-7f75bf355043" rel="noopener noreferrer">Installing Raspbian on a Raspberry Pi</a>
-                </h3>
-                <ul class="category-list">
-                    <li class="category sysops">Sysops</li>
-                    <li class="category linux">Limux</li>
-                </ul>
-                <p>
-                    You have likely heard the hype regarding the Raspberry Pi over the years, as usual the hardest part of getting started is where to start. You can certainly buy an SD Card that already contains the Raspbian operating system, however, what does buying such an SD card teach you?
-                    In this article I will show you how to install the Raspbian operating system on an SD card bypassing the need for Noobs.
-                </p>
-                <p><a href="https://medium.com/@petermcd/installing-raspbian-on-a-raspberry-pi-7f75bf355043">Read More...</a></p>
-            </section>
-        </div>
-
-    </main>
-    <section class="col-12 col-md-4">
-        <h2>Categories</h2>
-        <ul class="filter-list">
-        </ul>
-        <ul class="remove-filter"><li class="remove-current-filter"><a href="#">Remove Filter</a></li></ul>
-    </section>
-    <section class="skill-details col-12 col-md-4">
-        <h3><a href="http://petermcdonald.co.uk" target="_blank">Category</a></h3>
-        <article>Description</article>
-    </section>
-</div>
-<footer class="clearfix">
-    Copyright 2019 by Peter McDonald
-</footer>
-<script
-        src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"
-        type="text/javascript"></script>
-<script
-        src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        type="text/javascript"></script>
-<script
-        src="/js/portfolio.js"
-        type="text/javascript"></script>
-</body>
+        <footer class="clearfix">
+            Copyright 2019 by Peter McDonald
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="application/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="application/javascript"></script>
+        <script src="js/articles.js" type="application/javascript"></script>
+    </body>
 </html>

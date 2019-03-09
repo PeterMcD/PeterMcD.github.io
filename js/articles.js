@@ -2,34 +2,35 @@ $(document).ready(function (){
     populateFilters();
 });
 
-let skills = [];
+let categories = [];
 
-let skillDetails = {
+let categoryDetails = {
     linux: {
         "name": "Linux",
-        "url": "https://wordpress.org/",
         "description": "<p>Linux powers most of the moden internet including services such as Amazons AWS. Having Linux knowledge is a must for any self respecting developer..</p>"
     },
-    sysops: {
-        "name": "Sysops",
-        "url": "https://php.net/",
-        "description": "<p>PHP is a scripting language originally created by Rasmus Lerdorf. The language has grown to be 1 of the most widely used in web development.</p>"
+    programming: {
+        "name": "Programming",
+        "description": "<p>Programming is a very useful skill not only for developers but also sysops.</p>"
     },
     security: {
         "name": "Security",
-        "url": "https://www.postgresql.org/",
         "description": "<p>Security is such an important subject however is often overlooked.</p>"
+    },
+    sysops: {
+        "name": "Sysops",
+        "description": "<p>PHP is a scripting language originally created by Rasmus Lerdorf. The language has grown to be 1 of the most widely used in web development.</p>"
     }
 };
 
 function populateFilters(){
-    $(".skill").each(function(){
-        skills[$(this).attr("class").split(' ')[1]] = $(this).text();
+    $(".category").each(function(){
+        categories[$(this).attr("class").split(' ')[1]] = $(this).text();
     });
-    let keys = Object.keys(skills).sort();
-    $.each(keys, function(index, skill){
-        if(skills.hasOwnProperty(skill)){
-            addFilter(skill, skills[skill]);
+    let keys = Object.keys(categories).sort();
+    $.each(keys, function(index, category){
+        if(categories.hasOwnProperty(category)){
+            addFilter(category, categories[category]);
         }
     });
     $(".filter a").click(function(){
@@ -38,7 +39,7 @@ function populateFilters(){
     });
     $(".remove-current-filter a").click(function(){
         showAllProjects();
-        HideSkillDescription();
+        HideCategoryDescription();
     });
 }
 
@@ -48,34 +49,33 @@ function addFilter(filterID, filter){
 
 function showAllProjects(){
     $(".project").css("display", "block");
-    $(".skill").css("font-weight", "normal");
+    $(".category").css("font-weight", "normal");
     $(".remove-filter").css("display", "none");
 }
 
-function showSelectedProjects(skill){
+function showSelectedProjects(category){
     let project = $(".project");
     project.css("display", "none");
-    project.has("section ul ." + skill).css("display", "block");
-    $("." + skill).css("font-weight", "bold");
+    project.has("section ul ." + category).css("display", "block");
+    $("." + category).css("font-weight", "bold");
     $(".remove-filter").css("display", "block");
-    ShowSkillDescription(skill);
+    ShowCategoryDescription(category);
 }
 
-function HideSkillDescription(){
-    $(".skill-details").css("display", "none");
-    $(".skill-details a").text("");
-    $(".skill-details a").attr("href", "#");
-    $(".skill-details article").html("");
+function HideCategoryDescription(){
+    let categoryDetailsLink = $(".category-details a");
+    $(".category-details").css("display", "none");
+    categoryDetailsLink.text("");
+    categoryDetailsLink.attr("href", "#");
+    $(".category-details article").html("");
 }
 
-function ShowSkillDescription(skill){
-    if(!skillDetails.hasOwnProperty(skill)){
-        HideSkillDescription();
+function ShowCategoryDescription(category){
+    if(!categoryDetails.hasOwnProperty(category)){
+        HideCategoryDescription();
         return;
     }
-    let skillDetails = $(".skill-details a");
-    skillDetails.text(skillDetails[skill].name);
-    skillDetails.attr("href", skillDetails[skill].url);
-    $(".skill-details article").html(skillDetails[skill].description);
-    skillDetails.css("display", "block");
+    $(".category-details a").text(categoryDetails[category].name);
+    $(".category-details article").html(categoryDetails[category].description);
+    $(".category-details").css("display", "block");
 }
