@@ -15,6 +15,11 @@ let skillDetails = {
 		"url": "http://getbootstrap.com/",
 		"description": "<p>Bootstrap is a library that helps in the design of web pages. Bootstrap is commonly used to help build a conforming design through the use of a grid system. Bootstrap also works very closely with the popular Javascript library jQuery.</p>"
 	},
+	composer: {
+		"name": "Composer",
+		"url": "https://packagist.org",
+		"description": "<p>Composer is a PHP package manager.</p>"
+	},
 	drupal: {
 		"name": "Drupal",
 		"url": "https://www.drupal.org/",
@@ -49,6 +54,11 @@ let skillDetails = {
 		"name": "MySQL",
 		"url": "https://www.mysql.com/",
 		"description": "<p>MySQL (and the offshoot MariaDB) is the most widely used relational database currently in use. Being installed by default in many flavours of Linux has made it a popular choice among web hosts and software developers. Although open source, the software is owned by Oracle.</p>"
+	},
+	neo4j: {
+		"name": "Neo4j",
+		"url": "https://neo4j.com/",
+		"description": "<p>Neo4j is a popular graph database.</p>"
 	},
 	nodejs: {
 		"name": "Node.js",
