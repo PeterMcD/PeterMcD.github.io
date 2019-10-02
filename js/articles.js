@@ -16,10 +16,6 @@ let categoryDetails = {
     security: {
         "name": "Security",
         "description": "<p>Security is such an important subject however is often overlooked.</p>"
-    },
-    sysops: {
-        "name": "Sysops",
-        "description": "<p>PHP is a scripting language originally created by Rasmus Lerdorf. The language has grown to be 1 of the most widely used in web development.</p>"
     }
 };
 
