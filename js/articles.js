@@ -1,4 +1,6 @@
-$(document).ready(function (){
+"use strict";
+
+$(function (){
     populateFilters();
 });
 
@@ -7,7 +9,7 @@ let categories = [];
 let categoryDetails = {
     linux: {
         "name": "Linux",
-        "description": "<p>Linux powers most of the moden internet including services such as Amazons AWS. Having Linux knowledge is a must for any self respecting developer..</p>"
+        "description": "<p>Linux powers most of the modern internet including services such as Amazons AWS. Having Linux knowledge is a must for any self respecting developer.</p>"
     },
     programming: {
         "name": "Programming",
@@ -19,9 +21,12 @@ let categoryDetails = {
     }
 };
 
+/**
+ * Locates filters for addFilter uses to populate list
+ */
 function populateFilters(){
     $(".category").each(function(){
-        categories[$(this).attr("class").split(' ')[1]] = $(this).text();
+        categories[$(this).attr("class").split(" ")[1]] = $(this).text();
     });
     let keys = Object.keys(categories).sort();
     $.each(keys, function(index, category){
@@ -29,27 +34,39 @@ function populateFilters(){
             addFilter(category, categories[category]);
         }
     });
-    $(".filter a").click(function(){
-        showAllProjects();
-        showSelectedProjects($(this).attr("id"));
+    $(".filter a").on("click",function(){
+        showAllArticles();
+        showSelectedArticles($(this).attr("id"));
     });
-    $(".remove-current-filter a").click(function(){
-        showAllProjects();
+    $(".remove-current-filter a").on("click",function(){
+        showAllArticles();
         HideCategoryDescription();
     });
 }
 
+/**
+ * Creates a list of filters
+ * @param {string} filterID - ID of the filter
+ * @param filter - Dictionary of details regarding the filter
+ */
 function addFilter(filterID, filter){
-    $(".filter-list").append("<li class='filter'><a href='#' id='" + filterID + "'>" + filter + "</li>");
+    $('.filter-list').append("<li class='filter'><a href='#' id='" + filterID + "'>" + filter + "</li>");
 }
 
-function showAllProjects(){
+/**
+ * Resets view to show all articles when filter removed
+ */
+function showAllArticles(){
     $(".project").css("display", "block");
     $(".category").css("font-weight", "normal");
     $(".remove-filter").css("display", "none");
 }
 
-function showSelectedProjects(category){
+/**
+ * Shows articles that match a filter
+ * @param {string} category - The category being used as a filter
+ */
+function showSelectedArticles(category){
     let project = $(".project");
     project.css("display", "none");
     project.has("section ul ." + category).css("display", "block");
@@ -58,6 +75,9 @@ function showSelectedProjects(category){
     ShowCategoryDescription(category);
 }
 
+/**
+ * Hides any displayed text describing the filtered category.
+ */
 function HideCategoryDescription(){
     let categoryDetailsLink = $(".category-details a");
     $(".category-details").css("display", "none");
@@ -66,6 +86,10 @@ function HideCategoryDescription(){
     $(".category-details article").html("");
 }
 
+/**
+ * Displays information text about the selected category
+ * @param {string} category - The category being used as a filter
+ */
 function ShowCategoryDescription(category){
     if(!categoryDetails.hasOwnProperty(category)){
         HideCategoryDescription();
