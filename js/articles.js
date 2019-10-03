@@ -50,7 +50,14 @@ function populateFilters(){
  * @param filter - Dictionary of details regarding the filter
  */
 function addFilter(filterID, filter){
-    $('.filter-list').append("<li class='filter'><a href='#' id='" + filterID + "'>" + filter + "</li>");
+    let list_item = $("<li>");
+    $(list_item).addClass('filter');
+    let link = $("<a>");
+    link.attr("href", "#");
+    link.attr("id", filterID);
+    link.text(filter);
+    $(list_item).append(link);
+    $('.filter-list').append(list_item);
 }
 
 /**
