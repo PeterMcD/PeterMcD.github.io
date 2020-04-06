@@ -36,13 +36,15 @@ footer {
 }
 .category, .skill, .filter{
 	background-color: green;
+	color: white;
 }
 .filter a, .remove-current-filter a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 .remove-current-filter{
-	background-color: red;	
+	background-color: red;
+	color: white;
 }
 .remove-filter{
 	padding-left: 0;
