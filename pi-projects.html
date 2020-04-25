@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="css/bootstrap.min.css">
+    <link rel='stylesheet' href="css/portfolio.css">
+    <title>Portfolio - Peter McDonald</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Peter McDonald</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pi-projects.html">Pi Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class='container-fluid content'>
+    <main class="col-12 col-md-8">
+        <div class="intro">
+            <h2>
+                Pi Projects
+            </h2>
+            <p>
+                The raspberry Pi is a versatile, cheap piece of hardware. Below are some of the projects that I
+                currently use a Raspberry Pi for.
+            </p>
+        </div>
+
+        <div class="project clearfix">
+            <section class="project-details col-12 col-lg-8">
+                <h3>
+                    Ansible
+                </h3>
+                <p>
+                    Managing servers and devices can be a nuisance once you have a significant number of devices to
+                    manage. It can be easy to forget to maintain certain devices. Ansible also gives the capability
+                    to easily create a repeatable way to setup devices.
+                </p>
+                <p>
+                    I have dedicated a Raspberry Pi to act as an Ansible host to manage devices on both my local network
+                    as well as off network devices.
+                </p>
+            </section>
+        </div>
+
+        <div class="project clearfix">
+            <section class="project-details col-12 col-lg-8">
+                <h3>
+                    RC Car
+                </h3>
+                <p>
+                    I wished to work on a hardware project that I could interface with using Python, therefore I
+                    purchased an RC car kit that utilises a Raspberry Pi as the controller. The kit makes available an
+                    API to control the hardware such as the motors. You can also control and capture recordings from
+                    the camera.
+                </p>
+                <p>
+                    I am not currently sure of the end goal (apart from learning),
+                </p>
+            </section>
+        </div>
+
+        <div class="project clearfix">
+            <section class="project-details col-12 col-lg-8">
+                <h3>
+                    SSH Honeypot
+                </h3>
+                <p>
+                    Some time ago I wrote an article about the
+                    <a href="https://medium.com/@petermcd/i-opened-my-connection-to-ssh-attacks-and-these-were-the-requests-i-saw-a5999d62e511'">
+                        login attempts that I found trying to log into a honeypot</a>
+                    that I had created using a Raspberry Pi.
+                </p>
+                <p>
+                    I recently resurrected the project with the view of creating an interface showing login attempts
+                    in real time.
+                </p>
+            </section>
+        </div>
+    </main>
+</div>
+<footer class="clearfix">
+    Copyright 2020 by Peter McDonald
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="application/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        type="application/javascript"></script>
+<script src="js/portfolio.js" type="application/javascript"></script>
+</body>
+</html>
