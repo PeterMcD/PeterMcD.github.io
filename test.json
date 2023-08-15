@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Dummy 123",
+    "image": "dummy123.jpg"
+    "desc": "This is a dummy description",
+    "count": 0,
+    "builtin": false
+  },
+  {
+    "name": "Dummy 456",
+    "image": "dummy456.jpg"
+    "desc": "This is a dummy description",
+    "count": 0,
+    "builtin": false
+  },
+  {
+    "name": "Dummy 789",
+    "image": "dummy789.jpg"
+    "desc": "This is a dummy description",
+    "count": 0,
+    "builtin": false
+  }
+]
